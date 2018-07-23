@@ -1,0 +1,14 @@
+.test {
+  height: 100vh;
+  width: 100vw;
+  background: #6bc3c9; }
+  .test .test1 {
+    background-color: yellow;
+    height: 100px;
+    width: 100px; }
+  .test .test2 {
+    background-color: green;
+    height: 100px;
+    width: 100px; }
+  .test .test3 {
+    background-color: blue; }

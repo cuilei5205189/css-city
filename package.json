@@ -1,0 +1,21 @@
+{
+  "name": "2018_06_08_css_city",
+  "version": "0.0.1",
+  "description": "用css画一个插画风格的城市",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "cuilei",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-plumber": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
