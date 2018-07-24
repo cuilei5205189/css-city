@@ -1,0 +1,63 @@
+//设定字体
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display")
+
+*, *:before, *:after
+    font-family: "Playfair Display", "微軟正黑體"
+    position: relative
+
+    // border: solid 2px black
+    // background-color: #fff
+
+//指定颜色
+$colorBlueRoofLight: #6fc5ff
+$colorBlueRoofDark: #0058ff
+$colorGreyLight: #fafaf5
+$colorGreyNormal: #e3e2cf
+$colorGreyDark: #bebdaf
+$colorBackground: #2C2F36
+$colorShadowBlue: #7cb1ff
+$colorShadowBlueLight: #8dc9fc
+$colorWindowGrey: #534d4d
+
+//渐变
+
+//屋顶的渐变
+$roofGradient: linear-gradient(150deg, $colorBlueRoofLight, $colorBlueRoofDark)
+
+//白天到晚上的过渡渐变颜色
+$sceneGradient: linear-gradient(#1D2B49, #1A45A0, #91cdff, #fff)
+
+//设定Mixins
+=size($w, $h: $w, $bdrs: 0)
+    width: $w
+    height: $h
+    border-radius: $bdrs
+
+=flex($j: center, $a: center)
+    display: flex
+    justify-content: $j
+    align-items: $a
+
+=abpos($l: initial, $t: initial)
+    position: absolute
+    left: $l
+    top: $t
+
+//網頁設定撐滿內容放中央
+html, body
+    +flex
+    +size(100%)
+
+    background-color: $colorBackground
+    color: white
+    margin: 0
+
+.test
+    color: $colorWindowGrey
+
+input:checked+h1
+    margin-left: 500px
+    transform: scale(1.2)
+    color: red
+
+
