@@ -9,7 +9,7 @@ gulp.task('images', function () {
 })
 
 gulp.task('sass', function () {
-    return gulp.src('sass/*.scss')
+    return gulp.src('sass/**')
         .pipe(plumber())
         .pipe(sass())
         .pipe(gulp.dest('dist/css'))

@@ -1,14 +1,24 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+*, *:before, *:after {
+  font-family: "Playfair Display", "微軟正黑體";
+  position: relative; }
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #2C2F36;
+  color: white;
+  margin: 0; }
+
 .test {
-  height: 100vh;
-  width: 100vw;
-  background: #6bc3c9; }
-  .test .test1 {
-    background-color: yellow;
-    height: 100px;
-    width: 100px; }
-  .test .test2 {
-    background-color: green;
-    height: 100px;
-    width: 100px; }
-  .test .test3 {
-    background-color: blue; }
+  color: #534d4d; }
+
+input:checked + h1 {
+  margin-left: 500px;
+  transform: scale(1.2);
+  color: red; }
