@@ -4,9 +4,7 @@
 *, *:before, *:after
     font-family: "Playfair Display", "微軟正黑體"
     position: relative
-
-    // border: solid 2px black
-    // background-color: #fff
+    border: solid 2px black
 
 //指定颜色
 $colorBlueRoofLight: #6fc5ff
@@ -44,7 +42,7 @@ $sceneGradient: linear-gradient(#1D2B49, #1A45A0, #91cdff, #fff)
     top: $t
 
 //網頁設定撐滿內容放中央
-html, body
+html,body
     +flex
     +size(100%)
 
@@ -52,12 +50,27 @@ html, body
     color: white
     margin: 0
 
-.test
-    color: $colorWindowGrey
+.scene
+    +size(700px, 500px, 15px)
 
-input:checked+h1
+    .lefttopText
+        margin: 
+            left: 30px
+            top: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:checked + h1
     margin-left: 500px
     transform: scale(1.2)
     color: red
-
-
