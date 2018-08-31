@@ -14,7 +14,8 @@ html, body {
   border-radius: 0;
   background-color: #2C2F36;
   color: white;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 .scene {
   width: 700px;
@@ -23,6 +24,133 @@ html, body {
   .scene .lefttopText {
     margin-left: 30px;
     margin-top: 30px; }
+    .scene .lefttopText h1 {
+      font-size: 36px;
+      letter-spacing: 3px;
+      margin-top: 0;
+      font-weight: 300; }
+    .scene .lefttopText h5 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      opacity: 0.6;
+      margin-bottom: 0;
+      font-weight: 300; }
+    .scene .lefttopText p {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      opacity: 0.6; }
+    .scene .lefttopText .blueblock {
+      width: 20px;
+      height: 25px;
+      border-radius: 0; }
+  .scene .building {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scale(0.95); }
+    .scene .building [class^='house'] {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .scene .building .house1 {
+      width: 180px;
+      height: 180px;
+      border-radius: 0; }
+      .scene .building .house1 .window {
+        width: 40px;
+        height: 100px;
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-left: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .scene .building .house1 .window .circle {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 4px; }
+    .scene .building .house2 {
+      width: 240px;
+      height: 170px;
+      border-radius: 0;
+      right: 130px; }
+      .scene .building .house2 .door {
+        width: 40px;
+        height: 80px;
+        border-radius: 20px 20px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 45px; }
+    .scene .building .house3 {
+      width: 320px;
+      height: 300px;
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .scene .building .house3 .wall {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .scene .building .house3 .wall .window {
+          width: 24px;
+          height: 50px;
+          border-radius: 12px 12px 0 0;
+          margin-top: 30px; }
+        .scene .building .house3 .wall:before {
+          content: "";
+          display: block;
+          position: absolute;
+          border: 2px solid #000;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 120%;
+          height: 20px;
+          border-radius: 0;
+          top: -20px; }
+        .scene .building .house3 .wall:nth-child(1) {
+          flex: 10; }
+        .scene .building .house3 .wall:nth-child(2) {
+          flex: 14; }
+        .scene .building .house3 .wall:nth-child(3) {
+          flex: 10; }
+      .scene .building .house3 .roof {
+        width: 300px;
+        height: 150px;
+        border-radius: 150px 150px 0 0;
+        position: absolute;
+        top: -170px; }
+        .scene .building .house3 .roof .rooftop {
+          width: 28px;
+          height: 14px;
+          border-radius: 14px 14px 0 0;
+          position: absolute;
+          left: 50%;
+          top: -14px;
+          transform: translateX(-50%); }
+          .scene .building .house3 .roof .rooftop .cross {
+            width: 4px;
+            height: 30px;
+            border-radius: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10px; }
+            .scene .building .house3 .roof .rooftop .cross:before {
+              content: "";
+              display: block;
+              width: 20px;
+              height: 4px;
+              border-radius: 0;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              bottom: 15px; }
 
 input:checked + h1 {
   margin-left: 500px;
