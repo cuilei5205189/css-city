@@ -3,7 +3,7 @@
 *, *:before, *:after
     font-family: "Playfair Display", "微軟正黑體"
     position: relative
-    border: solid 2px black
+    border: solid 1px black
 //指定颜色
 $colorBlueRoofLight: #6fc5ff
 $colorBlueRoofDark: #0058ff
@@ -42,6 +42,9 @@ html, body
     position: relative
 .scene
     +size(700px, 500px, 15px)
+    background: $sceneGradient
+    background-size: 100% 300%
+    box-shadow: 0px 0px 30px rgba(black,0.3)
     .lefttopText
         margin:
             left: 30px
@@ -64,6 +67,7 @@ html, body
             opacity: 0.6
         .blueblock
             +size(20px, 25px)
+            background-color: $colorShadowBlue
     .building
         position: absolute
         right: 0
@@ -75,14 +79,19 @@ html, body
             right: 0
         .house1
             +size(180px)
+            background-color: $colorGreyLight
+            box-shadow: inset -50px 0px $colorGreyNormal
             .window
                 +size(40px, 100px, 20px)
+                background-color: $colorGreyNormal
+                box-shadow: inset 8px 5px $colorGreyDark
                 margin-top: 40px
                 margin-left: 70px
                 +flex
                 flex-direction: column
                 .circle
                     +size(20px, 20px, 50%)
+                    background-color: $colorWindowGrey
                     margin: 4px
         .house2
             +size(240px, 170px)
