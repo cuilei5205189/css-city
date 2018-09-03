@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 *, *:before, *:after {
   font-family: "Playfair Display", "微軟正黑體";
-  position: relative;
-  border: solid 1px black; }
+  position: relative; }
 
 html, body {
   display: flex;
@@ -24,6 +23,179 @@ html, body {
   background: linear-gradient(#1D2B49, #1A45A0, #91cdff, #fff);
   background-size: 100% 300%;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); }
+  .scene .allstars {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+@keyframes falling {
+  0%, 100% {
+    opacity: 0; }
+  70% {
+    opacity: 1; }
+  0% {
+    transform: translate(100px, 0); }
+  100% {
+    transform: translate(0, 200px); } }
+    .scene .allstars [class^='star'] {
+      background-color: #fff;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      animation: falling 2s infinite; }
+    .scene .allstars .star1 {
+      position: absolute;
+      left: 70.52314%;
+      top: -3.31227%;
+      animation-delay: -0.1s; }
+    .scene .allstars .star2 {
+      position: absolute;
+      left: 82.3793%;
+      top: 2.3355%;
+      animation-delay: -0.2s; }
+    .scene .allstars .star3 {
+      position: absolute;
+      left: 0.24455%;
+      top: 46.5958%;
+      animation-delay: -0.3s; }
+    .scene .allstars .star4 {
+      position: absolute;
+      left: 10.7919%;
+      top: 6.40342%;
+      animation-delay: -0.4s; }
+    .scene .allstars .star5 {
+      position: absolute;
+      left: 48.66409%;
+      top: -0.39943%;
+      animation-delay: -0.5s; }
+    .scene .allstars .star6 {
+      position: absolute;
+      left: 3.90596%;
+      top: 25.53145%;
+      animation-delay: -0.6s; }
+    .scene .allstars .star7 {
+      position: absolute;
+      left: 68.35051%;
+      top: 20.13925%;
+      animation-delay: -0.7s; }
+    .scene .allstars .star8 {
+      position: absolute;
+      left: 48.41379%;
+      top: 7.53712%;
+      animation-delay: -0.8s; }
+    .scene .allstars .star9 {
+      position: absolute;
+      left: 5.75104%;
+      top: 36.10387%;
+      animation-delay: -0.9s; }
+    .scene .allstars .star10 {
+      position: absolute;
+      left: 66.1406%;
+      top: 22.45308%;
+      animation-delay: -1s; }
+    .scene .allstars .star11 {
+      position: absolute;
+      left: 54.02241%;
+      top: 26.49457%;
+      animation-delay: -1.1s; }
+    .scene .allstars .star12 {
+      position: absolute;
+      left: 32.86311%;
+      top: -20.21787%;
+      animation-delay: -1.2s; }
+    .scene .allstars .star13 {
+      position: absolute;
+      left: 53.86577%;
+      top: 45.79848%;
+      animation-delay: -1.3s; }
+    .scene .allstars .star14 {
+      position: absolute;
+      left: 68.20336%;
+      top: -6.31686%;
+      animation-delay: -1.4s; }
+    .scene .allstars .star15 {
+      position: absolute;
+      left: 12.85737%;
+      top: 12.20497%;
+      animation-delay: -1.5s; }
+    .scene .allstars .star16 {
+      position: absolute;
+      left: 12.66974%;
+      top: 32.16553%;
+      animation-delay: -1.6s; }
+    .scene .allstars .star17 {
+      position: absolute;
+      left: 81.23833%;
+      top: 17.16261%;
+      animation-delay: -1.7s; }
+    .scene .allstars .star18 {
+      position: absolute;
+      left: 64.98972%;
+      top: 2.82372%;
+      animation-delay: -1.8s; }
+    .scene .allstars .star19 {
+      position: absolute;
+      left: 91.44185%;
+      top: -27.27973%;
+      animation-delay: -1.9s; }
+    .scene .allstars .star20 {
+      position: absolute;
+      left: 34.14761%;
+      top: -18.74858%;
+      animation-delay: -2s; }
+    .scene .allstars .star21 {
+      position: absolute;
+      left: 77.6397%;
+      top: -8.99292%;
+      animation-delay: -2.1s; }
+    .scene .allstars .star22 {
+      position: absolute;
+      left: 71.74271%;
+      top: 18.62694%;
+      animation-delay: -2.2s; }
+    .scene .allstars .star23 {
+      position: absolute;
+      left: 53.56977%;
+      top: 47.00906%;
+      animation-delay: -2.3s; }
+    .scene .allstars .star24 {
+      position: absolute;
+      left: 84.87612%;
+      top: 0.0046%;
+      animation-delay: -2.4s; }
+    .scene .allstars .star25 {
+      position: absolute;
+      left: 68.09298%;
+      top: -22.94985%;
+      animation-delay: -2.5s; }
+    .scene .allstars .star26 {
+      position: absolute;
+      left: 21.78496%;
+      top: -2.69038%;
+      animation-delay: -2.6s; }
+    .scene .allstars .star27 {
+      position: absolute;
+      left: 4.78632%;
+      top: -28.3367%;
+      animation-delay: -2.7s; }
+    .scene .allstars .star28 {
+      position: absolute;
+      left: 57.12563%;
+      top: 5.51417%;
+      animation-delay: -2.8s; }
+    .scene .allstars .star29 {
+      position: absolute;
+      left: 17.59614%;
+      top: 18.31243%;
+      animation-delay: -2.9s; }
+    .scene .allstars .star30 {
+      position: absolute;
+      left: 92.70695%;
+      top: -18.83304%;
+      animation-delay: -3s; }
   .scene .lefttopText {
     margin-left: 30px;
     margin-top: 30px; }
@@ -61,6 +233,7 @@ html, body {
       width: 180px;
       height: 180px;
       border-radius: 0;
+      z-index: 1;
       background-color: #fafaf5;
       box-shadow: inset -50px 0px #e3e2cf; }
       .scene .building .house1 .window {
@@ -85,11 +258,16 @@ html, body {
       width: 240px;
       height: 170px;
       border-radius: 0;
-      right: 130px; }
+      z-index: 2;
+      right: 130px;
+      background-color: #fafaf5;
+      box-shadow: inset 0px 15px #8dc9fc, inset -72px 0px #e3e2cf; }
       .scene .building .house2 .door {
         width: 40px;
         height: 80px;
         border-radius: 20px 20px 0 0;
+        background-color: #2C2F36;
+        box-shadow: inset 10px 2px #7cb1ff;
         position: absolute;
         bottom: 0;
         left: 45px; }
@@ -99,7 +277,9 @@ html, body {
       border-radius: 0;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      background-color: #fafaf5;
+      z-index: 0; }
       .scene .building .house3 .wall {
         height: 100%;
         flex: 1;
@@ -110,28 +290,46 @@ html, body {
           width: 24px;
           height: 50px;
           border-radius: 12px 12px 0 0;
+          background-color: #2C2F36;
           margin-top: 30px; }
         .scene .building .house3 .wall:before {
           content: "";
           display: block;
           position: absolute;
-          border: 2px solid #000;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           left: 50%;
           transform: translateX(-50%);
-          width: 120%;
+          width: 108%;
           height: 20px;
           border-radius: 0;
-          top: -20px; }
+          top: -20px;
+          background-color: inherit; }
         .scene .building .house3 .wall:nth-child(1) {
+          background-color: #fafaf5;
           flex: 10; }
+          .scene .building .house3 .wall:nth-child(1) .window {
+            box-shadow: inset 8px 2px #7cb1ff; }
+          .scene .building .house3 .wall:nth-child(1):before {
+            z-index: 1; }
         .scene .building .house3 .wall:nth-child(2) {
+          background-color: #e3e2cf;
           flex: 14; }
+          .scene .building .house3 .wall:nth-child(2) .window {
+            box-shadow: inset 0 2px #7cb1ff; }
+          .scene .building .house3 .wall:nth-child(2):before {
+            z-index: 2; }
         .scene .building .house3 .wall:nth-child(3) {
+          background-color: #bebdaf;
           flex: 10; }
+          .scene .building .house3 .wall:nth-child(3) .window {
+            box-shadow: inset -8px 2px #7cb1ff; }
+          .scene .building .house3 .wall:nth-child(3):before {
+            z-index: 1; }
       .scene .building .house3 .roof {
         width: 300px;
         height: 150px;
         border-radius: 150px 150px 0 0;
+        background: linear-gradient(150deg, #6fc5ff, #0058ff);
         position: absolute;
         top: -170px; }
         .scene .building .house3 .roof .rooftop {
@@ -141,17 +339,20 @@ html, body {
           position: absolute;
           left: 50%;
           top: -14px;
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+          background: #fff; }
           .scene .building .house3 .roof .rooftop .cross {
             width: 4px;
             height: 30px;
             border-radius: 0;
+            background-color: #fff;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             bottom: 10px; }
             .scene .building .house3 .roof .rooftop .cross:before {
               content: "";
+              background-color: #fff;
               display: block;
               width: 20px;
               height: 4px;

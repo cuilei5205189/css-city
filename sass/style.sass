@@ -3,7 +3,6 @@
 *, *:before, *:after
     font-family: "Playfair Display", "微軟正黑體"
     position: relative
-    border: solid 1px black
 //指定颜色
 $colorBlueRoofLight: #6fc5ff
 $colorBlueRoofDark: #0058ff
@@ -45,6 +44,29 @@ html, body
     background: $sceneGradient
     background-size: 100% 300%
     box-shadow: 0px 0px 30px rgba(black,0.3)
+    .allstars
+        +size(100%)
+        +abpos(0,0)
+        @keyframes falling
+            0%,100%
+                opacity: 0
+            70%
+                opacity: 1
+            0%
+                transform: translate(100px,0)
+            100%
+                transform: translate(0,200px)
+        [class^='star']
+            background-color: #fff
+            +size(3px,3px,50%)
+            animation: falling 2s infinite
+
+        @for $i from 1 through 30
+            .star#{$i}
+                $posX: random()*100%
+                $posY: random()*-80%+50%
+                +abpos($posX,$posY)
+                animation-delay: $i*-0.1s
     .lefttopText
         margin:
             left: 30px
@@ -79,6 +101,7 @@ html, body
             right: 0
         .house1
             +size(180px)
+            z-index: 1
             background-color: $colorGreyLight
             box-shadow: inset -50px 0px $colorGreyNormal
             .window
@@ -95,57 +118,75 @@ html, body
                     margin: 4px
         .house2
             +size(240px, 170px)
+            z-index: 2
             right: 130px
+            background-color: $colorGreyLight
+            box-shadow: inset 0px 15px $colorShadowBlueLight,inset -72px 0px $colorGreyNormal
             .door
                 +size(40px, 80px, 20px 20px 0 0)
+                background-color: $colorBackground
+                box-shadow: inset 10px 2px $colorShadowBlue
                 position: absolute
                 bottom: 0
                 left: 45px
         .house3
             +size(320px, 300px)
             +flex
+            background-color: $colorGreyLight
+            z-index: 0
             .wall
                 height: 100%
                 flex: 1
                 +flex(center, flex-start)
                 .window
                     +size(24px, 50px, 12px 12px 0 0)
+                    background-color: $colorBackground
                     margin-top: 30px
                 &:before
                     content: ""
                     display: block
                     position: absolute
-                    border: 2px solid #000
+                    box-shadow: 0px 0px 10px rgba(black,0.1)
                     left: 50%
                     transform: translateX(-50%)
-                    +size(120%, 20px)
+                    +size(108%, 20px)
                     top: -20px
-                =wall($flex)
+                    background-color: inherit
+                =wall($color,$flex,$windowPan,$z:1)
+                    background-color: $color
                     flex: $flex
+                    .window
+                        box-shadow: inset $windowPan 2px $colorShadowBlue
+                    &:before
+                        z-index: $z
                 &:nth-child(1)
-                    +wall(10)
+                    +wall($colorGreyLight,10,8px)
                 &:nth-child(2)
-                    +wall(14)
+                    +wall($colorGreyNormal,14,0,2)
                 &:nth-child(3)
-                    +wall(10)
+                    +wall($colorGreyDark,10,-8px)
             .roof
                 =halfCir($r)
                     +size($r * 2, $r, $r $r 0 0)
                 +halfCir(150px)
+                background: $roofGradient
                 position: absolute
                 top: -170px
                 .rooftop
                     +halfCir(14px)
                     +abpos(50%, -14px)
                     transform: translateX(-50%)
+                    background: #fff
                     .cross
                         +size(4px, 30px)
+                        background-color: #fff
                         position: absolute
                         left: 50%
                         transform: translateX(-50%)
                         bottom: 10px
                         &:before
                             content: ""
+                            background-color: #fff
                             display: block
                             +size(20px, 4px)
                             position: absolute
