@@ -39,6 +39,35 @@ html, body
     color: white
     margin: 0
     position: relative
+
+.remind
+    opacity: 0.2
+    margin-bottom: 10px
+    letter-spacing: 1px
+.dayText
+    display: none
+
+.sun,.moon
+    +size(50px,50px,50%)
+    +abpos(250px,100px)
+
+.sun
+    background-color: #ffdd38
+    box-shadow: 0px 0px 20px rgba(#ffdd38,0.9)
+    top: 400px
+    opacity: 0
+
+.moon
+    // box-shadow: inset 10px -10px rgba(#fff,0.9)
+    animation: moonAppear 5s both
+
+@keyframes moonAppear
+    0%
+        box-shadow: inset 0px 0px rgba(white,0.9)
+    100%
+        box-shadow: inset 10px -10px rgba(white,0.9)
+
+
 .scene
     +size(700px, 500px, 15px)
     background: $sceneGradient
@@ -71,6 +100,7 @@ html, body
         margin:
             left: 30px
             top: 30px
+        padding-top: 20px
         h1
             font-size: 36px
             letter-spacing: 3px
@@ -193,7 +223,34 @@ html, body
                             left: 50%
                             transform: translateX(-50%)
                             bottom: 15px
-input:checked + h1
-    margin-left: 500px
-    transform: scale(1.2)
-    color: red
+
+
+h1,h5,p,.moon,.sun,.scene,.allstars,.blue,.block,.building
+    transition: 2s
+
+input:checked + .scene
+    background-position: 0 100%
+    .nightText
+        display: none
+    .dayText
+        display: block
+    .allstars
+        display: none
+    h1,h5,p
+        color: #000
+    .building
+        filter: brightness(105%)
+    .moon
+        top: -100px
+        opacity: 0
+    .sun
+        top: 100px
+        opacity: 1
+    .blueblock
+        background-color: #fff
+
+input
+    display: none
+
+label
+    cursor: pointer

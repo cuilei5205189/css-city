@@ -16,6 +16,37 @@ html, body {
   margin: 0;
   position: relative; }
 
+.remind {
+  opacity: 0.2;
+  margin-bottom: 10px;
+  letter-spacing: 1px; }
+
+.dayText {
+  display: none; }
+
+.sun, .moon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 250px;
+  top: 100px; }
+
+.sun {
+  background-color: #ffdd38;
+  box-shadow: 0px 0px 20px rgba(255, 221, 56, 0.9);
+  top: 400px;
+  opacity: 0; }
+
+.moon {
+  animation: moonAppear 5s both; }
+
+@keyframes moonAppear {
+  0% {
+    box-shadow: inset 0px 0px rgba(255, 255, 255, 0.9); }
+  100% {
+    box-shadow: inset 10px -10px rgba(255, 255, 255, 0.9); } }
+
 .scene {
   width: 700px;
   height: 500px;
@@ -48,157 +79,158 @@ html, body {
       animation: falling 2s infinite; }
     .scene .allstars .star1 {
       position: absolute;
-      left: 70.52314%;
-      top: -3.31227%;
+      left: 77.60463%;
+      top: 10.24571%;
       animation-delay: -0.1s; }
     .scene .allstars .star2 {
       position: absolute;
-      left: 82.3793%;
-      top: 2.3355%;
+      left: 92.28776%;
+      top: 39.06206%;
       animation-delay: -0.2s; }
     .scene .allstars .star3 {
       position: absolute;
-      left: 0.24455%;
-      top: 46.5958%;
+      left: 13.55484%;
+      top: 44.74782%;
       animation-delay: -0.3s; }
     .scene .allstars .star4 {
       position: absolute;
-      left: 10.7919%;
-      top: 6.40342%;
+      left: 61.23615%;
+      top: -21.26615%;
       animation-delay: -0.4s; }
     .scene .allstars .star5 {
       position: absolute;
-      left: 48.66409%;
-      top: -0.39943%;
+      left: 68.64319%;
+      top: 22.7847%;
       animation-delay: -0.5s; }
     .scene .allstars .star6 {
       position: absolute;
-      left: 3.90596%;
-      top: 25.53145%;
+      left: 60.39361%;
+      top: 41.75215%;
       animation-delay: -0.6s; }
     .scene .allstars .star7 {
       position: absolute;
-      left: 68.35051%;
-      top: 20.13925%;
+      left: 57.46968%;
+      top: 29.15549%;
       animation-delay: -0.7s; }
     .scene .allstars .star8 {
       position: absolute;
-      left: 48.41379%;
-      top: 7.53712%;
+      left: 69.71576%;
+      top: 45.6001%;
       animation-delay: -0.8s; }
     .scene .allstars .star9 {
       position: absolute;
-      left: 5.75104%;
-      top: 36.10387%;
+      left: 60.59807%;
+      top: 5.78052%;
       animation-delay: -0.9s; }
     .scene .allstars .star10 {
       position: absolute;
-      left: 66.1406%;
-      top: 22.45308%;
+      left: 93.74804%;
+      top: -29.2826%;
       animation-delay: -1s; }
     .scene .allstars .star11 {
       position: absolute;
-      left: 54.02241%;
-      top: 26.49457%;
+      left: 82.0387%;
+      top: 45.71724%;
       animation-delay: -1.1s; }
     .scene .allstars .star12 {
       position: absolute;
-      left: 32.86311%;
-      top: -20.21787%;
+      left: 74.61967%;
+      top: -15.93016%;
       animation-delay: -1.2s; }
     .scene .allstars .star13 {
       position: absolute;
-      left: 53.86577%;
-      top: 45.79848%;
+      left: 20.95348%;
+      top: -10.29663%;
       animation-delay: -1.3s; }
     .scene .allstars .star14 {
       position: absolute;
-      left: 68.20336%;
-      top: -6.31686%;
+      left: 91.31457%;
+      top: 4.49975%;
       animation-delay: -1.4s; }
     .scene .allstars .star15 {
       position: absolute;
-      left: 12.85737%;
-      top: 12.20497%;
+      left: 93.42901%;
+      top: 31.4472%;
       animation-delay: -1.5s; }
     .scene .allstars .star16 {
       position: absolute;
-      left: 12.66974%;
-      top: 32.16553%;
+      left: 96.5523%;
+      top: 34.34419%;
       animation-delay: -1.6s; }
     .scene .allstars .star17 {
       position: absolute;
-      left: 81.23833%;
-      top: 17.16261%;
+      left: 22.66848%;
+      top: -9.88327%;
       animation-delay: -1.7s; }
     .scene .allstars .star18 {
       position: absolute;
-      left: 64.98972%;
-      top: 2.82372%;
+      left: 43.81866%;
+      top: 21.9836%;
       animation-delay: -1.8s; }
     .scene .allstars .star19 {
       position: absolute;
-      left: 91.44185%;
-      top: -27.27973%;
+      left: 62.59841%;
+      top: 38.85458%;
       animation-delay: -1.9s; }
     .scene .allstars .star20 {
       position: absolute;
-      left: 34.14761%;
-      top: -18.74858%;
+      left: 4.90108%;
+      top: 2.28932%;
       animation-delay: -2s; }
     .scene .allstars .star21 {
       position: absolute;
-      left: 77.6397%;
-      top: -8.99292%;
+      left: 46.60907%;
+      top: -9.82058%;
       animation-delay: -2.1s; }
     .scene .allstars .star22 {
       position: absolute;
-      left: 71.74271%;
-      top: 18.62694%;
+      left: 13.84472%;
+      top: -14.48318%;
       animation-delay: -2.2s; }
     .scene .allstars .star23 {
       position: absolute;
-      left: 53.56977%;
-      top: 47.00906%;
+      left: 25.81656%;
+      top: -3.81016%;
       animation-delay: -2.3s; }
     .scene .allstars .star24 {
       position: absolute;
-      left: 84.87612%;
-      top: 0.0046%;
+      left: 76.03704%;
+      top: 3.43691%;
       animation-delay: -2.4s; }
     .scene .allstars .star25 {
       position: absolute;
-      left: 68.09298%;
-      top: -22.94985%;
+      left: 29.48039%;
+      top: -14.79748%;
       animation-delay: -2.5s; }
     .scene .allstars .star26 {
       position: absolute;
-      left: 21.78496%;
-      top: -2.69038%;
+      left: 56.59963%;
+      top: -1.65763%;
       animation-delay: -2.6s; }
     .scene .allstars .star27 {
       position: absolute;
-      left: 4.78632%;
-      top: -28.3367%;
+      left: 45.7911%;
+      top: -0.52689%;
       animation-delay: -2.7s; }
     .scene .allstars .star28 {
       position: absolute;
-      left: 57.12563%;
-      top: 5.51417%;
+      left: 5.25282%;
+      top: 15.82505%;
       animation-delay: -2.8s; }
     .scene .allstars .star29 {
       position: absolute;
-      left: 17.59614%;
-      top: 18.31243%;
+      left: 59.87364%;
+      top: 26.61975%;
       animation-delay: -2.9s; }
     .scene .allstars .star30 {
       position: absolute;
-      left: 92.70695%;
-      top: -18.83304%;
+      left: 33.23727%;
+      top: 0.45596%;
       animation-delay: -3s; }
   .scene .lefttopText {
     margin-left: 30px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding-top: 20px; }
     .scene .lefttopText h1 {
       font-size: 36px;
       letter-spacing: 3px;
@@ -362,7 +394,32 @@ html, body {
               transform: translateX(-50%);
               bottom: 15px; }
 
-input:checked + h1 {
-  margin-left: 500px;
-  transform: scale(1.2);
-  color: red; }
+h1, h5, p, .moon, .sun, .scene, .allstars, .blue, .block, .building {
+  transition: 2s; }
+
+input:checked + .scene {
+  background-position: 0 100%; }
+  input:checked + .scene .nightText {
+    display: none; }
+  input:checked + .scene .dayText {
+    display: block; }
+  input:checked + .scene .allstars {
+    display: none; }
+  input:checked + .scene h1, input:checked + .scene h5, input:checked + .scene p {
+    color: #000; }
+  input:checked + .scene .building {
+    filter: brightness(105%); }
+  input:checked + .scene .moon {
+    top: -100px;
+    opacity: 0; }
+  input:checked + .scene .sun {
+    top: 100px;
+    opacity: 1; }
+  input:checked + .scene .blueblock {
+    background-color: #fff; }
+
+input {
+  display: none; }
+
+label {
+  cursor: pointer; }

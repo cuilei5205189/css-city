@@ -1,5 +1,7 @@
 # css city
 
+![css-project](http://pdanxug8c.bkt.clouddn.com/css%20project.gif)
+
 ## 简介
 用css画一个城市插画
 
@@ -10,13 +12,24 @@
 - 白天和晚上功能切换
 
 ## 技术
-- jade-html
+- pug-html
+    - include
 
 - sass-css
-    - sass变量、模块
-    - css动画
+    - Variables: $
+    - @for
+    - min
+
 
 - gulp
     - sass
     - jade
     - gulp-plumber
+
+- css3
+    - box-shadow
+    - position
+    - ::before
+    - flex
+    - keyframs
+    - animation
