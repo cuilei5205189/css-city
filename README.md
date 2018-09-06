@@ -17,7 +17,7 @@
 
 - sass-css
     - Variables: $
-    - @for
+    - for
     - min
 
 
