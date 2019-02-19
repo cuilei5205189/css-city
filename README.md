@@ -1,7 +1,7 @@
 # css city
 
 
-![css-project](http://pdanxug8c.bkt.clouddn.com/css%20project.gif)
+![css-project](http://qiniublog.cuilei.top/css%20project.gif)
 
 ## 简介
 用css画一个城市插画
